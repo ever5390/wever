@@ -1,0 +1,188 @@
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+body{
+    background-color: #DAF7A6;
+}
+
+section{
+    width: 100%;
+    background-color: rgba(250, 250, 250, .8);
+    float: left;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* contenedores sobreExpuestos*/
+
+.content-1{
+    
+    background:rgba(250, 100, 0,.6);
+    width: 150%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    transform: rotate(400deg);
+    left: -440px;
+    transition: all 850ms;
+    
+}
+
+.content-2{
+    
+    background:rgba(250, 100, 0,.6);
+    width: 150%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    transform: rotate(400deg);
+    left: -410px;
+    transition: all 800ms;
+    
+}
+
+.content-3{
+    
+    background:rgba(250, 100, 0,.6);
+    width: 150%;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(-400deg);
+    left: -400px;
+    transition: all 750ms;
+}
+
+.content-4{
+    
+    background:rgba(250, 100, 0,.6);
+    width: 150%;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(-400deg);
+    left: -350px; 
+    transition: all 900ms;
+}
+
+/* Fin */
+p{
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+
+    opacity : 0;
+
+    top: 30%;
+    position: absolute;
+
+    transition: 0.8s linear;
+    -moz-transition: 0.8s linear;
+    -webkit-transition: 0.8s linear;
+    -o-transition: 0.8s linear;
+    -ms-transition: 0.8s linear;
+
+    transform: scale(.5);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+  
+
+    transition: 0.8s linear;
+    -moz-transition: 0.8s linear;
+    -webkit-transition: 0.8s linear;
+    -o-transition: 0.8s linear;
+    -ms-transition: 0.8s linear;
+}
+
+section:hover{
+    cursor: pointer;
+    transition: 0.8s linear;
+    -moz-transition: 0.8s linear;
+    -webkit-transition: 0.8s linear;
+    -o-transition: 0.8s linear;
+    -ms-transition: 0.8s linear;
+    
+}
+
+section:hover .content-1{
+    opacity : .7;
+    width : 280%;
+    transition: all 700ms;
+}
+
+section:hover .content-2{
+    opacity : .7;
+    width : 240%;
+    transition: all 600ms;
+}
+
+section:hover .content-3{
+    opacity : .7;
+    width : 280%;
+    transition: all 800ms;
+}
+
+section:hover .content-4{
+    opacity : .7;
+    width : 280%;
+    transition: all 900ms;
+}
+
+section:hover img{
+    opacity: .5;
+    transform: scale(1.4);
+}
+
+section:hover p{
+    opacity: 1;
+    transition: all 800ms;
+    transform: scale(1);
+    z-index: 1;
+}
+
+@media (min-width : 500px){
+
+    body{
+        background-color: #FFC300;
+        font-size: 12px;
+    }
+
+    section{
+        width: 48%;
+    }
+
+    
+}
+
+@media (min-width : 760px){
+
+    body{
+        background-color: #FF5733;
+       
+    }
+
+    section{
+        width: 31.33%;
+    }
+}
+
+@media (min-width : 1200px){
+
+    body{
+        background-color: #C70039;
+        
+    }
+
+    section{
+        width: 23%;
+    }
+}
+    
